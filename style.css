@@ -182,8 +182,7 @@ body {
     margin-bottom: 60px;
 }
 
-.form-amount {
-}
+
 
 .form-title > h3 {
     font-weight: 400;
@@ -197,6 +196,7 @@ body {
 
 .amount-btn-box {
     display: flex;
+    align-items: center;
 }
 
 .amount-btn {
@@ -204,13 +204,23 @@ body {
     padding: 5px;
 }
 
-.amount-btn > button {
+.amount-btn > span {
     background-color: #1f3058;
     color: #fff;
     border-radius: 2px;
     border: 0;
     padding: 6px 12px;
     border-color: #1f3058;
+    cursor: pointer;
+    transition: all .1s ease-in;
+}
+
+.amount-btn > span:hover {
+    background-color: #2b4789;
+}
+
+.amount-btn > span:focus {
+    background-color: #2b4789 !important;
 }
 
 .amount-input {
